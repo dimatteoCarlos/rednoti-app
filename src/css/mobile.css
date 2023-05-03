@@ -122,8 +122,12 @@
   .main-article .author-info {
     justify-content: center;
   }
-  .main-article .author-info .category {
+  .main-article .author-info .category,
+  .main-article .author-info .date {
     display: none;
+  }
+  .main-article .author-info .i {
+    display: inline;
   }
 
   .about-container .side {

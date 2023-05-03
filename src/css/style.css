@@ -93,14 +93,17 @@ h6 {
   font-weight: bold;
   display: inline-block;
 }
-.category.sports {
+.sports {
   background-color: var(--sports-color, orange);
 }
-.category.entertainment {
+.entertainment {
   background-color: var(--ent-color);
 }
-.category.technology {
+.technology {
   background-color: var(--tech-color);
+}
+.fashion {
+  background-color: var(--fash-color,greenyellow);
 }
 
 .btn {

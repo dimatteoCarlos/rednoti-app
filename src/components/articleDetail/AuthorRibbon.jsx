@@ -12,7 +12,7 @@ export const AuthorRibbon = ({ name, date, classCat }) => {
           &nbsp; &nbsp;
         </span>
         &nbsp; &nbsp;
-        <span>{`Date: ${date}`}</span>
+        <span className='date'>{`Date: ${date}`}</span>
       </div>
     </>
   );
