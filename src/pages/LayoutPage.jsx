@@ -1,15 +1,14 @@
-import React from 'react';
-import NavBar from '../components/NavBar/NavBar'
-import Footer from '../components/footer/Footer'
+import NavBar from '../components/NavBar/NavBar';
+import Footer from '../components/footer/Footer';
 
-const LayoutPage = ({children}) => {
+const LayoutPage = ({ children }) => {
   return (
     <>
-    <NavBar />
-    {children}
-    <Footer />
+      <NavBar />
+      {children}
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default LayoutPage
+export default LayoutPage;

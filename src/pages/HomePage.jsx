@@ -1,17 +1,17 @@
-
+import { homeArticles as datos } from '../data/homeArticles';
 import MainArticles from '../components/MainArticles';
 import Showcase from '../components/Showcase';
 import LayoutPage from './LayoutPage';
-// import '../css/style.css';
+
+export const imagesUrl = '../../imgs/articles/';
 
 export const HomePage = () => {
   return (
     <>
       <LayoutPage>
         <Showcase />
-        <MainArticles />
+        <MainArticles datos={datos} imagesUrl={imagesUrl} />
       </LayoutPage>
-
     </>
   );
 };

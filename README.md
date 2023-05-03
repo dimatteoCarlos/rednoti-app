@@ -1,8 +1,15 @@
 Project: React app about RedNoticias
 
-static spa
-react-router-dom v6.10
+spa
+It is a static page
 
-It is in construction yet
+dependencies to install:
+react-router-dom v6.10.0
 
+---
 
+uses:
+hard coded data
+css variables
+css grid
+sections were divided in components

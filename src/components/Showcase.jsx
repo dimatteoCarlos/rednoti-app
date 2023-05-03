@@ -1,8 +1,14 @@
-import React from 'react';
-import '../css/style.css';
 import { Link } from 'react-router-dom';
 import ArticleBase from './ArticleBase';
-import { homeArticles } from '../data/homeArticles.jsx';
+import { homeArticles as datArt } from '../data/homeArticles.jsx';
+
+//article picked as showcase
+const pickedArtIndx = 0;
+const showCaseArticle = {
+  props: datArt[pickedArtIndx],
+  para2: datArt[pickedArtIndx].desc[1],
+  para1: datArt[pickedArtIndx].desc[0],
+};
 
 const Showcase = () => {
   return (
@@ -12,14 +18,14 @@ const Showcase = () => {
         <div className='showcase-container'>
           <div className='showcase-content'>
             <ArticleBase
-              category='sports'
-              title='Women Soccer championship'
-              bg=''
-              para1="The eight FIFA Women's World Cup tournaments have been won by four national teams. The United States have won four times, and are the current champions after winning it at the 2019 tournament in France"
+            //this way of sending the props delay de loading
+              {...showCaseArticle.props}
+              para1={showCaseArticle.para1.para}
+              para2={showCaseArticle.para2.para}
             ></ArticleBase>
 
             <div className='btn btn-primary prueba'>
-              <Link to='/article'>Read More</Link>
+              <Link to='/1'>Read More</Link>
             </div>
           </div>
         </div>

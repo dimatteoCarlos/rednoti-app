@@ -211,7 +211,7 @@ p {
 /*****Social*****/
 ul.social {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   text-align: center;
   align-items: center;
   justify-self: center;
@@ -231,6 +231,11 @@ ul.social {
 .fa-twitter:hover {
   color: #1d9bf0;
   /* width: 100%; */
+  z-index: 1;
+  background-color: transparent;
+}
+.fa-telegram:hover {
+  color: #0a88c7;
   z-index: 1;
   background-color: transparent;
 }
@@ -443,7 +448,13 @@ ul.menu li a:hover {
 
 /********footer*****/
 /*******ABOUT PAGE*/
+#about {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
 #about .container {
+  border: 1px solid red;
   margin: 1rem;
 }
 .about-container {
@@ -469,6 +480,7 @@ ul.menu li a:hover {
   padding: 0.5rem 2rem;
   background-color: #fff;
 }
+
 #article-news .page-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
@@ -481,17 +493,42 @@ ul.menu li a:hover {
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  background-color: #eee;
+  background-color: hsl(0, 0%, 93%);
   padding: 0.5rem;
+}
+.main-article .author-info .category {
+  margin-bottom: 0;
+}
+
+.main-article .author-info .i {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-article .author-info .i.sports {
+  color: var(--sports-color, orange);
+  background-color: transparent;
+}
+.main-article .author-info .i.entertainment {
+  color: var(--ent-color);
+  background-color: transparent;
+}
+.main-article .author-info .i.technology {
+  color: var(--tech-color);
+  background-color: transparent;
+}
+
+.main-article p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .card {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .side {
   padding: 1rem 1rem;
   margin-top: 2rem;
-}
-.main-article .author-info .category {
-  margin-bottom: 0;
 }

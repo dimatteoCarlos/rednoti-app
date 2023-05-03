@@ -5,29 +5,28 @@ import AboutPage from './pages/AboutPage';
 import ArticlePage from './pages/ArticlePage';
 import ErrorPage from './pages/ErrorPage';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-// import {loader as DetailNewsLoader,ArticleDetail} from './pages/ArticleDetail'
+import './css/style.css';
+import './css/mobile.css';
+
 function App() {
+
+  // window.document.title=estadoTitulo;
+
   const router = createBrowserRouter([
     {
       path: '/',
       errorElement: <ErrorPage />,
       element: <HomePage />,
-      children:[
-        {path:':Id',
-          id:':id-detailRouter',
-          // loader:DetailNewsLoader,
-          // element:<ArticleDetail/>,
-        },
-      ]
+    },
+    {
+      path: ':Id',
+      element: <ArticlePage></ArticlePage>,
     },
     {
       path: 'about',
       element: <AboutPage />,
     },
-    {
-      path: 'article',
-      element: <ArticlePage />,
-    },
+    
   ]);
 
   return (
