@@ -8,7 +8,7 @@ const NavBar = () => {
       <Logo />
       <Social />
       <MenuNavigation />
-    </div>
+      </div>
   );
 };
 

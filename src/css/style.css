@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap');
-
 :root {
   /* --primary-color: #c72727; */
   /* --primary-color: rgb(199, 39, 39); */
@@ -76,13 +75,10 @@ h6 {
   line-height: 1.3;
 }
 
-/* * {
-  border: 1px solid black;
-} */
-
 /*Utilidades or utilities */
 .container {
   max-width: var(--max-width);
+  width:100%;
   margin: auto;
   padding: 0 2rem;
   overflow: hidden;
@@ -264,7 +260,7 @@ ul.menu {
   text-align: center;
 }
 ul.menu li a {
-  padding: 0.75rem;
+  padding: 0.5rem;
   font-weight: bold;
 }
 
@@ -449,19 +445,16 @@ ul.menu li a:hover {
 /********footer*****/
 /*******ABOUT PAGE*/
 #about {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
 }
 #about .container {
-  border: 1px solid red;
   margin: 1rem;
 }
 .about-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
   background-color: var(--light-color);
-  /* height: 90vh; */
   gap: 1.5rem;
 }
 .about-container .main {
