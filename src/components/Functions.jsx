@@ -4,5 +4,5 @@ export function showImgFn(img) {
 }
 
 export function getItem(data, id) {
-  return data.find((x)=>x.id==id);
+  return data.find((x)=>x.id===id);
 }

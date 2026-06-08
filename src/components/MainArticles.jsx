@@ -13,7 +13,6 @@ export const articleFormat = [
 
 const MainArticles = ({ datos, imagesUrl }) => {
 
-
   return (
     <section id='main-articles' className='py-2'>
       <div className='container'>

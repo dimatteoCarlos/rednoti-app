@@ -1,6 +1,6 @@
 import React from 'react';
 import { JoinClubCard } from './JoinClubCard';
-import { BottomFooter } from './BottomFooter';
+// import { BottomFooter } from './BottomFooter';
 
 export const FooterClub = () => {
   return (
