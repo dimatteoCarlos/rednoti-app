@@ -4,6 +4,8 @@ import { JoinClub } from './JoinClub';
 
 export const ArticleDetail = ({ item, showImgFn, imageRoot }) => {
   //select  images to show
+  console.log("item, showImgFn, imageRoot",item, showImgFn, imageRoot)
+  
   const coverAddress = `${imageRoot}${item.cover}`;
   const imageAddress = `${imageRoot}${item.image}`;
 

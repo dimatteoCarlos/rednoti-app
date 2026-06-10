@@ -11,10 +11,13 @@ const ArticlePage = () => {
   const { Id } = useParams();
   //Selection of data set
   const setData = Number(Id) > 0 ? datos : todayArticle;
+
   //find the item comparing Id and x.id
-  // const item = setData.find((x) => Number(x.id) == Number(Id));
+  // const item = setData.find((x) => Number(x.id) === Number(Id));
   const item = getItem(setData, Id);
 
+  console.log("🚀 ~ ArticlePage ~ item:", item,setData, Id, Number(setData.id) === Number(Id), setData.id, Id)
+  
   return (
     <>
       <LayoutPage>
